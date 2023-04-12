@@ -8,7 +8,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/opsgauraw/testcicd.git'
+                git branch: 'master', url: 'https://github.com/opsgauraw/testhelmcicd.git'
              
           }
         }
