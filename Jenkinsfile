@@ -3,7 +3,6 @@ pipeline {
     environment{
         VERSION = "${env.BUILD_ID}"
     }
-    echo $VERSION
  stages {
       stage('checkout') {
            steps {
