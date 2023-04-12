@@ -60,7 +60,6 @@ pipeline {
  
             }
         }
-    #Adding new stage of helm deployment
       stage('Run helm deployment') {
              
             steps {
