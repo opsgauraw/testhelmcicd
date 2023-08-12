@@ -44,7 +44,7 @@ pipeline {
             steps 
    {
                 sh "docker ps -a | grep 8085 | awk '{print \$1}' | xargs docker stop"
-                sh "docker run -d -p 8085:8080 opsgauraw/testwebapp:$VERSION"
+                sh "docker run -d -p 8092:8080 opsgauraw/testwebapp:$VERSION"
  
             }
         }
