@@ -33,6 +33,7 @@ pipeline {
             steps {
           //sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'      
        // withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
+          sh  'docker login -u opsgauraw -p Opswork@022023'    
           sh  'docker push opsgauraw/testwebapp:$VERSION'
         //  sh  'docker push opsgauraw/testwebapp:latest' 
        // }
