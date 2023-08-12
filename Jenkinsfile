@@ -21,6 +21,7 @@ pipeline {
            steps {
               
                 sh 'docker build -t opsgauraw/testwebapp .' 
+                sh 'echo $VERSION'
                 sh 'docker tag opsgauraw/testwebapp opsgauraw/testwebapp:$VERSION'
                 //sh 'docker tag testwebapp opsgauraw/testwebapp:$BUILD_NUMBER'
                
