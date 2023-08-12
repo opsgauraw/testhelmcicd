@@ -56,7 +56,7 @@ pipeline {
                 echo "We will try running helm deployment"
                 sh "helm lint helm/myapp0412/"
                 sh "helm template helm/myapp0412/"
-                sh "helm upgrade --set image.tag=$VERSION myjavatest0412 helm/myapp0412/ -n helm-test"
+                sh "helm upgrade --set image.tag=$VERSION myjavatest0412 helm/myapp0412/ -n august-test"
                 //sh "docker -H ssh://jenkins@172.31.28.25 run -d -p 8003:8080 opsgauraw/testwebapp"
  
             }

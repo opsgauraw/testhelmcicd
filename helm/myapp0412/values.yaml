@@ -10,7 +10,7 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: $VERSION
 ports:
-  nodePort: 30040
+  nodePort: 30030
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
